@@ -1,0 +1,18 @@
+h2 {
+    color: rgb(98, 176, 157);
+    background-color: bisque;
+}
+
+button {
+    color: mediumseagreen
+}
+
+p {
+    color: red;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+body {
+    background-color: palevioletred;
+}
