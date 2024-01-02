@@ -6,6 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Race Registration!</h1>
+    <form action="">
+    <p>
+    <label for="first">First Name</label>
+    <input type="text" id="first" name="firstname" required>
+    <!-- name은 데이터가 제출될 때의 그 값의 이름임 -->
+    <label for="last">Last Name</label>
+    <input type="text" id="last" name="lastname"requred> 
+</p>
+<p>
+    <label>Select a Race:</label>
+    <div>
+    <input type="radio" name="race" id="fivek" value="fivek">
+    <label for="fivek">Fun Run 5k</label>
+</div>
+<div>
+    <input type="radio" name="race" id="half" value="half">
+    <label for="half">Half Marathon</label>
+</div>
+<div>
+    <input type="radio" name="race" id="full" value="full">
+    <label for="full">Full Marathon</label>
+</div>
+</p>
+<p>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+</p>
+<p>
+    <label for="age">Select Age Group</label>
+    <select name="age" id="age">
+        <option value="kids">under 18</option>
+        <option value="ya">18-30</option>
+        <option value="adults">31-50</option>
+        <option value="seniors">51+</option>
+    </select>
+</p>
+    <button>Register</button>
+</form>
+<!-- 제출시 바뀌는 url 
+    file:///C:/Users/jijinn/Desktop/dev/udemy/The%20Web%20Developer%202023/
+    RaceRegistration.html?firstname=jieun&lastname=kim&race=fivek&email=jiji%40jjj&password=1234&age=kids -->
 </body>
 </html>
