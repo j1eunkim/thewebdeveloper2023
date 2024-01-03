@@ -1,0 +1,36 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkslategrey;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: khaki;
+}
+#static #middle {
+    position: static;
+    top: 100px;
+    /* static은 top이런게 유효하지 않음 */
+}
+
+#relative #middle{
+    position: relative;
+    top: 100px; 
+    left: 50px;
+    /* 이러면 '원래 있던 자리 기준' 우측 아래로 이동함 */
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+    /* absolute는 body를 기준으로 이동하게 됨 */
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 50px;
+    /* absolute와 같지만 공간을 차지하지 않고 페이지에서 눈에 보이는 위치를 유지함 */
+}
