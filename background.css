@@ -1,0 +1,9 @@
+/* contain: 잘림없이 최대한 꽉차게하지만 반복되어 나타남
+cover: 박스크기를 넘어가면 이미지를 줄임 */
+/* 반복은 repeat으로 조정 가능 */
+/* background속성에 url을 넣을 수도 있음  */
+
+section {
+    background: center/cover url("");
+    /* background: center/40% no-repeat url("")이렇게 하면 작아지면서 반복x */
+}
