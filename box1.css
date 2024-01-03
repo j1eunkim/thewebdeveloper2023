@@ -39,3 +39,50 @@ button {
     padding: 10px 50px;
     margin: 5px;
 }
+
+h2 {
+    display: inline;
+    background-color: darksalmon;
+    /* inline요소는 width나 height같은 요소가 무시됨 contents에 영향을 주지 않고 그냥 겹쳐짐*/
+}
+
+span {
+    background-color: darkorange;
+    display: block;
+    /* block요소들은 width같은 요소에 영향을 받고 유효하다는 점(다른 content와 겹치지 않고 밀어냄) */
+}
+
+#s {
+    background-color: olivedrab;
+    height: 200px;
+    width: 200px;
+    margin: 4px;
+    display: inline-block;
+}
+
+section {
+    width: 500px;
+    height: 500px;
+    background-color: palevioletred;
+}
+
+#unit {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    background: brown;
+}
+
+article {
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    /* 여백의 1em은 바로 윗부모기준 요소의 크기를 그대로 따른다 */
+}
+
+p {
+    font-size: 3em;
+    /* rem은 root의 사이즈 기준이므로 점점 작아지거나 점점 커지지 않는다는 장점 */
+}
