@@ -1,3 +1,24 @@
+body {
+    background-color: rgb(6, 6, 50);
+    
+}
+
+button {
+    margin: 100px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid;
+    border-color:chartreuse;
+    padding: 10px;
+    transition: all 0.25s;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(208, 255, 0); 
+    transform: translate(-0.25em);
+}
+
 div {
     width: 100px;
     height: 100px;
@@ -25,13 +46,13 @@ div {
 
 #absolute #middle {
     position: absolute;
-    top: 50px;
+    top: 500px;
     /* absolute는 body를 기준으로 이동하게 됨 */
 }
 
 #fixed #middle {
     position: fixed;
-    top: 50px;
+    top: 500px;
     /* absolute와 같지만 공간을 차지하지 않고 페이지에서 눈에 보이는 위치를 유지함 */
 }
 
