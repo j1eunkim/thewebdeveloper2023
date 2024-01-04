@@ -1,0 +1,17 @@
+nav {
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    font-family: cursive;
+    margin-left: 1.6666666%;
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+span {
+    font-weight: 700;
+}
+
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}
