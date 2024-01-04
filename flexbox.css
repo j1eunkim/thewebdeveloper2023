@@ -1,0 +1,41 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    padding: 1%;
+    background-color: #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    margin: 10px;
+    
+}
+
+.first{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse; /*wrap은 줄바꿈인데 reverse하면 상하좌우축이 반대로 바뀜 */
+}
+
+.second {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#container div {
+    font-size: 40px;
+    width: 15%;
+    height: 40%;
+    text-align: center;
+}
