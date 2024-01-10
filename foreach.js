@@ -12,6 +12,12 @@ const movies = [{
 }
 ]
 
+const goodMovies = movies.filter(movie => movie.score > 70)
+const goodTitles = goodMovies.map(movie => movie.title)
+
+movies.filter(movie => movie.score > 80).map(movie => movie.title);
+// 위 두개를 합치면 이렇게 됨 
+
 movies.forEach(function (movie) {
     console.log(`${movie.title} - ${movie.score}`)
 })
@@ -20,6 +26,7 @@ movies.map(function(movie) {
     console.log(movie.title.toUpperCase())
 })
 //map은 원래의 배열을 변형할 때 필요함 
+
 
 const add = function(x,y) {
     return x + y;
@@ -48,3 +55,10 @@ const newMovies = movies.map(function(movie) {
 const newMovies2 = movies.map(movie => (
  `${movie.title} - ${movie.score/10}`
 ))
+
+const nums = [9,8,7,6,5,4,3,2,1];
+
+nums.filter(n => {
+    return n < 5
+})
+// 필터링 된 item이 속한 새로운 배열이 만들어짐
