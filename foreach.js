@@ -62,3 +62,5 @@ nums.filter(n => {
     return n < 5
 })
 // 필터링 된 item이 속한 새로운 배열이 만들어짐
+
+document.getElementById()
