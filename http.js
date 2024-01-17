@@ -32,3 +32,24 @@ const loadStarWarsPeople = async () => {
 loadStarWarsPeople();
 
 // 이렇게 비동기함수를 활용하면 위와 똑같지만 더 간단함. 
+
+// 여기서 부터는 더 간단한 axios를 활용
+// axios.get("https://swapi.dev/api/people/1/")
+// .then(res => {
+//     console.log("axios Response:", res);
+// })
+// .catch((e) => {
+//     console.log("Error", e);
+// })
+
+const getStarWarsPerson = async (id) => {
+    try {
+        const res = await axios.get(`https://swapi.dev/api/people/${id}/`);
+        console.log("axios response 2", res.data);
+    } catch(e) {
+        console.log("Error", e);
+    }
+    
+};
+
+getStarWarsPerson(5);
